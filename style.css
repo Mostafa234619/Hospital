@@ -1,0 +1,986 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:content-box;
+}
+body{
+     font-family: "Poppins", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* utillity classes */
+.text-brimary{
+  color: rgb(15, 130, 175);
+}
+.btn{
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 13px;
+}
+.container{
+margin: auto;
+max-width: 1200px;
+padding: 0 2rem;
+}
+.hidding{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+}
+#About,
+#Info,
+#Help,
+#Call,
+#Services,
+#price-list,
+#Prand,
+#Doctors,
+#Blogs,#Contact,#news,#Footer{
+   padding: 6rem 0;
+}
+/* header start */
+#Home{
+    background: url(img/bg-home.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.082);
+    background: white;
+    z-index: 2;
+}
+.logo{
+    width: 250px;
+}
+.navbar nav{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 0 1rem;
+}
+.navbar nav ul{
+    display: flex;
+}
+.navbar nav ul a{
+    margin-right: 20px;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.801);
+    font-weight: 500;
+     transition: all ease 0.3s;  
+}
+
+.navbar nav ul a:hover {
+     color: rgb(6, 152, 209);  
+}
+.header-content{
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+   min-height: 100vh;
+   padding-left: 1.5rem;
+}
+.header-content small {
+display: flex;
+align-items: center;
+font-size: 15px;
+font-weight:500;
+}
+.header-content .col h1{
+    max-width: 600px;
+    line-height: 37px;
+    margin: 1rem 0;  
+}
+.header-content .col h1+p{
+font-size: 13px;
+color: rgba(0, 0, 0, 0.555);
+max-width: 500px;
+font-weight: 500;
+margin-bottom: 15px;
+}
+.btn-brimary{
+background: rgb(7, 104, 196);
+padding: 7px 18px;
+margin-right: 10px;
+transition: all ease 0.3s;
+}
+.btn-brimary:hover{
+color: white;
+background: rgb(3, 53, 99);
+}
+.btn-secondry{
+    background: rgb(2, 2, 54);
+    padding: 7px 18px;
+    transition: all ease 0.3s;
+}
+.btn-secondry:hover{
+background:rgb(4, 55, 104);
+}
+/* header end */
+/* About start */
+
+#About .hidding h2,
+#Help .hidding h2,
+#Services .hidding h2,
+#price-list .hidding h2,
+#Doctors .hidding h2,
+#Blogs .hidding h2,
+#Contact .hidding h2{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(1, 1, 37);
+}
+#About .hidding img,
+#Help .hidding img,
+#Services .hidding img,
+#price-list .hidding img,
+#Doctors .hidding img,
+#Blogs .hidding img,
+#Contact .hidding img{
+    margin: 18px 0;
+}
+#About .hidding p,
+#Help .hidding p,
+#Services .hidding p,
+#price-list .hidding p,
+#Doctors .hidding p,
+#Blogs .hidding p,
+#Contact .hidding p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.575);
+}
+.About-content,
+.help-content,
+.services-content,
+.price-content,
+.doctors-content,
+.blogs-content{
+    margin-top: 2rem;
+}
+.About-content .text-content h3{
+    color: rgb(1, 1, 37);
+    margin-bottom: 8px;
+}
+.About-content .text-content hr{
+    width: 45px;
+    height: 2px;
+    background: rgb(11, 112, 194);
+    border: none;
+    margin-bottom: 8px;
+}
+.About-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+.About-content .text-content{
+    width: 100%;
+}
+.About-content .text-content p{
+   margin-bottom: 1rem;
+   font-size: 14px;
+   font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+.About-content .text-content .special{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 1rem;
+}
+.About-content .text-content .special i{
+    color: rgb(6, 106, 187);
+    margin-right: 5px;
+    font-size: 14px;
+}
+.About-content .text-content .special li{
+    color: rgba(0, 0, 0, 0.5);
+     font-size: 13px;
+   font-weight: 600;
+}
+.About-content img{
+    width: 100%;
+    
+}
+/* About end */
+/* Info start */
+#Info{
+    background:url(img/info-bg.jpg) no-repeat center center/cover ;
+    position: relative;
+    padding: 5rem 0;
+}
+#Info::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(4, 85, 160);
+    opacity: 0.7;
+}
+.Info-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.Info-content .item{
+    display: flex;
+    align-items: center;
+     z-index: 1;
+}
+.Info-content .item:hover i{
+background: white;
+color: rgb(8, 118, 209);
+}
+.Info-content .item i{
+    font-size: 25px;
+    color: white;
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.Info-content .item .data{
+    margin-left: 20px;
+    color: white;
+}
+.Info-content .item .data span{
+    font-size: 25px;
+}
+.Info-content .item .data p{
+    font-size: 12px;
+    font-weight: 500;
+}
+/* end Info */
+/* start Help */
+.help-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+}
+.help-content .item{
+text-align: center;
+position: relative;
+}
+.help-content .item:first-child::before,
+.help-content .item:nth-child(2)::before{
+    content: '';
+    border-bottom: rgb(5, 122, 201) dotted 4px;
+    position: absolute;
+    width: 120px;
+    top: 25px;
+    right: -60px;
+}
+.help-content .item i{
+    font-size: 25px;
+    color: rgb(6, 106, 187);
+    padding: 15px;
+    border: 1px solid rgba(43, 3, 3, 0.096);
+    border-radius: 50%;
+    background: white;
+    margin-bottom: 10px;
+}
+.help-content .item h3{
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(2, 2, 26);
+    margin-bottom: 10px;
+}
+.help-content .item p{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.534);
+}
+/*  end help */
+/* start call */
+#Call{
+    background: url(img/call-bg.jpg) no-repeat center center/cover;
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+}
+#Call::before{
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    background: rgb(5, 116, 219);
+    
+}
+#Call .call-content{
+    width: 450px;
+    margin: auto;
+}
+#Call .call-content  h2{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+#Call .call-content p{
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 13px;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+#Call .call-content .btn-third{
+    background: white;
+    padding: 6px 16px;
+    color: rgb(11, 114, 248);
+    font-size: 12px;
+    font-weight: 600;
+    border: white solid 1px;
+    transition: all ease 0.3s;
+}
+#Call .call-content .btn-third:hover{
+    background: transparent;
+    color: white;
+}
+#Call .call-content .btn-fourth{
+     background: transparent;
+    padding: 6px 16px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    border: white solid 1px;
+    transition: all ease 0.3s;
+    margin-left: 1rem;
+}
+#Call .call-content .btn-fourth:hover{
+    background: white;
+    color: rgb(9, 131, 231);
+}
+/* end call */
+/* start Services */
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.services-content .item{
+    display: flex;
+}
+.services-content .item i{
+   color: rgb(8, 136, 240);
+   font-size: 30px;
+   margin-right: 15px;
+}
+.services-content .item h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.services-content .item p{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.514);
+    font-weight: 500;
+}
+/* end services */
+/* start price list */
+#price-list{
+    background: rgba(0, 0, 255, 0.014);
+    padding-bottom: 2rem;
+}
+.price-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 4rem 0;
+   column-gap: 2rem;
+}
+.price-content .col{
+    background: white;
+    box-shadow:0px 0px 3px rgba(0, 0, 0, 0.226);
+}
+
+.price-content .col .data{
+  margin: 1rem 0;
+      text-align: center;
+}
+.price-content .col .data i{
+    color: rgb(11, 113, 247);
+    font-size: 40px;
+    margin: 1rem 0;
+}
+.price-content .col .data h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.price-content .col .data p{
+    color: rgb(11, 113, 247);
+    font-size: 25px;
+    font-weight: 700;
+}
+.price-content .col .data .visit{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.486);
+}
+.price-content .col .item{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 22px;
+}
+.price-content .col .item p{
+    margin-bottom:10px ;
+}
+.price-content .col .item  p{
+    color: rgba(0, 0, 0, 0.63);
+    font-size: 13px;
+    font-weight: 600;
+}
+.price-content .col .item .specialist1 p:first-child,
+.price-content .col .item .specialist1 p:nth-child(2),
+.price-content .col .item .specialist2 p:first-child,
+.price-content .col .item .specialist2 p:nth-child(2),
+.price-content .col .item .specialist2 p:nth-child(3),
+.price-content .col .item .specialist3 p{
+color: rgb(11, 113, 247);
+font-size: 13px;
+}
+.price-content .col .item .specialist1 p:nth-child(3),
+.price-content .col .item .specialist1 p:nth-child(4),
+.price-content .col .item .specialist1 p:last-child{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.664);
+}
+.btn-five{
+    display: block;
+    color: white;
+   text-align: center;
+   background: rgb(11, 113, 247);
+   padding: 9px 8px;
+   margin: 1.5rem 1.5rem;
+}
+/* end price list */
+/* start prand */
+#Prand{
+    background:url(img/info-bg.jpg) no-repeat center center/cover ;
+    position: relative;
+    padding: 5rem 0;
+    z-index: 1;
+}
+#Prand::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgb(4, 85, 160);
+    opacity: 0.7;
+    z-index: -1;
+}
+.Prand-content{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+align-items: center;
+}
+.Prand-content img:nth-child(2){
+    width: 200px;
+}
+/* end prand */
+/* start Doctors */
+#Doctors{
+    background: rgba(0, 0, 255, 0.041);
+}
+.doctors-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.doctors-content .col{
+    background: rgb(255, 255, 255);
+    
+}
+.doctors-content .col .data{
+margin-top: 2rem;
+    text-align: center;
+}
+.doctors-content .col .data .text-brimary{
+   font-size: 13px;
+   font-weight: 600;
+   margin-top: 1rem;
+}
+.doctors-content .col img{
+width: 100%;
+height: 60%;
+}
+
+.doctors-content .col a{
+    display:block;
+    margin: auto;
+    background: rgb(2, 70, 197);
+    width:70px;
+    text-align: center;
+    padding: 9px 10px;
+    margin-top: 1rem;
+    border-radius: 30px;
+}
+/* end Doctors */
+/* start-blogs */
+.blogs-content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 2rem;
+}
+.blogs-content .col{
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.281);
+    position: relative;
+}
+.blogs-content .col .data::before{
+content: "";
+position: absolute;
+bottom: 0;
+left: 0;
+width: 0%;
+height: 2px;
+background: rgb(5, 110, 248);
+transition: all 0.3s ease;
+}
+.blogs-content .col:hover .data::before{
+    width: 100%;
+}
+.blogs-content .col img{
+    width: 100%;
+}
+
+.blogs-content .col .data{
+    margin: 1rem 1rem;
+}
+.blogs-content .col .data a{
+background: rgb(3, 81, 224);
+padding: 7px 15px;
+margin: 1rem 0;
+}
+.blogs-content .col .data h3{
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.blogs-content .col .data p{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+/* end blogs */
+/* start Contact  */
+#Contact{
+    background: rgba(0, 0, 255, 0.034);
+}
+.contact-content{
+   margin-top: 5rem;
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+  column-gap: 1rem;
+}
+.contact-content .data{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.1rem;
+}
+.contact-content .data input{
+    padding: 9px 8px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    color: rgba(0, 0, 0, 0.479);
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.11);
+}
+.contact-content form textarea{
+    width: 100%;
+    margin-top: 1rem;
+    outline: none;
+    border: 2px solid rgb(36, 120, 231);
+    color: rgba(0, 0, 0, 0.479);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 8px;
+    width: 96%;
+}
+.contact-content form{
+    width: 70%;
+}
+.contact-content img{
+    width: 100%;
+     height: 420px;
+}
+.contact-content form button{
+    margin-top: 2rem;
+    border: none;
+    background: rgb(5, 72, 196);
+    padding: 10px 12px;
+}
+/* end Contact */
+/* start news */
+#news{
+    background: rgba(0, 0, 255, 0.103);
+}
+.news-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.news-content .data1 h3{
+font-weight: 600;
+margin-bottom: 10px;
+}
+.news-content .data1 p{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+}
+.news-content .data2{
+    width: 100%;
+}
+.news-content .data2 input{
+background: white;
+border-radius: 4px;
+border: none;
+outline: none;
+padding: 10px 9px;
+font-size: 13px;
+font-weight: 500;
+color: rgba(0, 0, 0, 0.63);
+width: 60%;
+}
+.news-content .data2 button{
+    background: rgb(0, 89, 255);
+    margin-left: 1rem;
+    padding: 10px 35px;
+    border: none;
+outline: none;
+}
+/* end news */
+/* start footer */
+#Footer{
+    background: rgb(0, 102, 255);
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr 1.5fr;
+    column-gap: 3rem;
+}
+.footer-content .col h3{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+ .footer-content .col hr{
+    width: 40px; 
+    height: 2px;
+    background: white;
+    border: none;
+    margin-bottom: 1rem;
+} 
+.footer-content .col p{
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+.footer-content .col .special {
+margin-top: 1.2rem;
+}
+.footer-content .col .special i{
+    color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 7px;
+    font-size: 13px;
+    margin-right: 6px;
+}
+.footer-content .col ul li a{
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+.footer-content .col ul li{
+    transition: all ease 0.3s;
+}
+.footer-content .col ul li:hover{
+margin-left: -10px;
+}
+.footer-content .col hr+p{
+    margin-bottom: 1rem;
+}
+.footer-content .col .pen{
+    margin-bottom: 5px;
+}
+.footer-content .col input{
+    outline: none;
+    padding: 10px 8px;
+    border-radius: 4px;
+    border: solid white 1px;
+    background: rgb(0, 102, 255);
+    color: white;
+}
+.footer-content .col input::placeholder{
+    color: white;
+    font-size: 15px;
+}
+.footer-content .col button{
+    display: block;
+    background: white;
+    color: rgb(0, 102, 255);
+      padding: 8px 8px;
+       border-radius: 4px;
+       border: solid white 1px;
+       cursor: pointer;
+      margin-top: 1rem;
+      font-size: 20px;
+      width: 150px;
+}
+.right{
+background: rgb(3, 74, 228);
+}
+.right p{
+    text-align: center;
+    color: white;
+     font-size: 13px;
+     padding: 15px 0;
+}
+.right span{
+    font-size: 15px;
+    font-weight: 600;
+}
+/* end footer */
+/* start responsive */
+@media(max-width:800px){
+.logo{
+    width: 200px;
+}
+.navbar nav ul a{
+    margin-right: 13px;
+    font-size: 15px;
+}
+.header-content{
+    margin-left: 1.5rem;
+}
+.header-content .col h1{
+    max-width: 500px;
+   line-height: 35px;
+}
+.About-content .text-content .special{
+    column-gap: 1rem;
+}
+.About-content img{
+   height: 200px;
+}
+.help-content .item:first-child::before,
+.help-content .item:nth-child(2)::before{
+    display: none;
+}
+#Call .call-content  h2{
+    font-size: 20px;
+}
+.Prand-content{
+grid-template-columns: repeat(2,1fr);
+row-gap: 2rem;
+margin-left: 2rem;
+}
+.contact-content{
+   margin-top: 5rem;
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+}
+.contact-content{
+  grid-template-columns:repeat(1,1fr);
+}
+.contact-content form{
+    width: 100%;
+    order: 2;
+    margin-top: 2rem;
+}
+.contact-content img{
+     width: 100%;
+     margin-left: 0rem;
+     order: 1;
+     height: 380px;
+}
+.news-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    column-gap: 2rem;
+}
+.news-content .data2 input{
+    margin-bottom: 0.8rem;
+}
+}
+@media(max-width:650px){
+    .navbar nav{
+    flex-direction: column;
+}
+
+.logo{
+    width: 180px;
+}
+.navbar nav ul{
+    margin-bottom: 10px;
+}
+.navbar nav ul a{
+    margin-right: 8px;
+    font-size: 14px;
+}
+.About-content{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.About-content img{
+    margin-top: 2rem;
+    
+}
+.Info-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.3rem;
+}
+.help-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+#Call .call-content{
+    width: 330px;
+    text-align: center;
+    margin: auto;
+}
+#Call .call-content p{
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 12px;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.price-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+gap: 2rem;
+}
+.Prand-content{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 1rem;
+}
+.Prand-content img{
+     width: 130px;
+}
+.doctors-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.doctors-content .col{
+    background: rgb(255, 255, 255);
+    height: 400px;
+}
+.blogs-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+.blogs-content .col .data h3{
+    margin-bottom: 1rem;
+    font-size:20px;
+}
+.blogs-content .col .data p{
+    font-size: 12px;
+    
+}
+#Call .call-content{
+    width: 300px;
+    margin: auto;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: 1.5fr  1.5fr;
+    gap: 2rem;
+}
+.hidding{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+#About .hidding h2,
+#Help .hidding h2,
+#Services .hidding h2,
+#price-list .hidding h2,
+#Doctors .hidding h2,
+#Blogs .hidding h2,
+#Contact .hidding h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(1, 1, 37);
+}
+#About .hidding img,
+#Help .hidding img,
+#Services .hidding img,
+#price-list .hidding img,
+#Doctors .hidding img,
+#Blogs .hidding img,
+#Contact .hidding img{
+    margin: 15px 0;
+}
+#About .hidding p,
+#Help .hidding p,
+#Services .hidding p,
+#price-list .hidding p,
+#Doctors .hidding p,
+#Blogs .hidding p,
+#Contact .hidding p{
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.575);
+}
+.help-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+}
+@media(max-width:450px){
+ .help-content,
+ .Info-content,
+ .services-content,
+ .price-content,
+ .Prand-content,
+ .doctors-content,
+ .blogs-content,
+ .contact-content,
+ .news-content,
+ .footer-content,
+ .contact-content .data{
+    grid-template-columns: repeat(1,1fr);
+}  
+.contact-content img{
+    width: 300px;
+}
+.Prand-content img:nth-child(2){
+    width: 170px;
+}
+.doctors-content .col{
+    background: rgb(255, 255, 255);
+    height: 400px;
+}
+}
+/* end responsive */
